@@ -1,8 +1,10 @@
 import React from 'react'
 import './Product.css'
 import {useStateValue} from './StateProvider'
+import {Link,useHistory} from 'react-router-dom'
 function Product({id,title,image,price,rating}) {
-    const [{},dispatch]=useStateValue();
+    const [{user},dispatch]=useStateValue();
+    const history=useHistory()
     const addToBasket=()=>{
         dispatch({
             type:'ADD_TO_BASKET',
@@ -35,7 +37,14 @@ function Product({id,title,image,price,rating}) {
             </div>
             </div>
             <img src={image}></img>
-            <button onClick={addToBasket}>Add To Basket</button>
+            {user?(
+
+                <button onClick={addToBasket}>Add To Basket</button>
+            ):(
+                
+             <button onClick={e=>history.push('/login')}>Add To Basket</button>
+        
+            )}
         </div>
     )
 }

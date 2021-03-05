@@ -1,0 +1,53 @@
+.payment{
+    background-color: white;
+}
+.payment_container > h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(234,237,237);
+    border-bottom: 1px solid lightgray;
+}
+.payment_container > h1 a{
+    text-decoration: none;
+}
+.payment_section{
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+}
+.payment_title{
+    flex: 0.2;
+}
+.payment_address,.payment_items{
+    flex: 0.8;
+}
+.payment_details{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #dddd;
+    border-radius: 3px;
+    justify-content: space-between;
+}
+.subtotal_gift{
+    display: flex;
+    align-items: center;
+
+}
+.subtotal_gift >input{
+    margin-right: 5px;
+}
+.payment_details >button{
+    background-color: #f0c14b;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    color: #111;
+}

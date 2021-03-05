@@ -2,14 +2,15 @@
 .checkoutProduct{
     display: flex;
     margin-left: 10px;
-    background-color: white;
+    margin-top: 10px;
     
-
 }
 .checkoutProduct_img{
     width: 180px;
     height: 180px;
     object-fit: contain;
+    background-color: white;
+    padding: 5px;
     
 }
 .checkoutPrdouct_info{

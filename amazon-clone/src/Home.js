@@ -49,7 +49,7 @@ function Home() {
              <div className="home_row">
              <Product
            id="6"
-           title="Prime TV"
+           title="Samsung Q90/Q90T QLED"
            price={2500}
            rating={4}
            image="https://images-na.ssl-images-amazon.com/images/I/71GYLokH21L._SX679_.jpg"
