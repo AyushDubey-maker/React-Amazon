@@ -7,6 +7,7 @@ import {useStateValue} from './StateProvider'
 import { auth } from './firebase';
 function Header() {
     const [{basket,user}]=useStateValue();
+ 
    const login=()=>{
        if(user){
            auth.signOut();
@@ -52,7 +53,7 @@ function Header() {
             <Link to='/login' className="header_link">
             <div className="header_basketOption">
                 <ShoppingBasketIcon/>
-                <span className="header_optionLineTwo header_basketCount">{basket?.length}</span>
+                <span className="header_optionLineTwo header_basketCount">0</span>
             </div>
         </Link>
          )}

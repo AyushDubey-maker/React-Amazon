@@ -6,6 +6,7 @@ function Product({id,title,image,price,rating}) {
     const [{user},dispatch]=useStateValue();
     const history=useHistory()
     const addToBasket=()=>{
+        
         dispatch({
             type:'ADD_TO_BASKET',
             item:{
@@ -16,6 +17,7 @@ function Product({id,title,image,price,rating}) {
                 rating:rating
             }
         })
+    
     }
     return (
         <div className="product">

@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {useStateValue} from './StateProvider'
 import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct'
 import Subtotal from './Subtotal'
+import { db } from './firebase'
 function Checkout() {
     const [{basket,user}]=useStateValue();
+    const [banner,setBanner]=useState('')
+    //Getting Image through Firebase 
+    useEffect(()=>{
+     db.collection('banner_img').doc('2bAuY8S9WQqtWOrGxyZV').get().then((result)=>{
+         setBanner(result.data())
+     })
+    },[])
     return (
     // Providing this type of className is BEM representation
        
@@ -13,7 +21,7 @@ function Checkout() {
 
         
             <div className="checkout_left">
-            <img className="checkout_ad" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/JanART/GW2021/T1a/T1b/T1c/Jan-ART_DesktopHero_1X-_today_unrec._CB662326710_.jpg" >
+            <img className="checkout_ad" src={banner.img}>
 
             </img>
            {basket?.length===0 ?(

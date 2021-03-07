@@ -3,6 +3,7 @@ import {Link,useHistory} from 'react-router-dom';
 import amazon_logo from './amazon_logo.png'
 import './Login.css'
 import {auth} from './firebase'
+import { Alert } from '@material-ui/lab';
 function Login() {
     const history=useHistory();
     const [email,setEmail]=useState('')
@@ -14,6 +15,8 @@ function Login() {
           history.push('/')
        })
        .catch(e=>alert(e.message))
+      
+       
     }
     const register=(event)=>{
         event.preventDefault()
@@ -39,6 +42,7 @@ function Login() {
                  <h5>Password</h5>
                  <input value={password} type="password" onChange={event=>setPassword(event.target.value)}/>
                  <button type="submit" onClick={login} className="login_button">Log-In</button>
+                
              </form>
              <p>
              By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.
