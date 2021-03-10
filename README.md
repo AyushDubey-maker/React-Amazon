@@ -8,3 +8,9 @@ This is an Amazon Clone built on React.Js and Firebase as backend.It handles ope
 
 <img src="/amazon-3.png"/>
 
+<img src="/amazon-4.png"/>
+
+<img src="/amazon-5.png"/>
+
+<img src="/amazon-6.png"/>
+
