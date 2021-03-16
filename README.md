@@ -10,7 +10,7 @@ This is an Amazon Clone built on React.Js and Firebase as backend.It handles ope
 > ### Sign-In / Login Page:
 <img src="/amazon-2.png" height="450"/>
 
-
+<hr/>
 <img src="/amazon-3.png"/>
 
 > ### User Basket:
