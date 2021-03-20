@@ -19,7 +19,7 @@ This is an Amazon Clone built on React.Js and Firebase as backend.It handles ope
 <hr/>
 
 > ### Payment/Checkout Page:
-<img src="/amazon-5.png"/>
+<img src="/amazon-5-edit.png"/>
 
 > ### Orders Page:
 
