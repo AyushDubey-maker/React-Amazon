@@ -31,6 +31,12 @@ This is an Amazon Clone built on React.Js and Firebase as backend.It handles ope
 
 <img src="/amazon-7.png"/>
 
+<hr/>
+
+> ### Footer:
+
+<img src="/amazon-8.png"/>
+
 
 ### Packages to be installed:
 
